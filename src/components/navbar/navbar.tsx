@@ -68,7 +68,7 @@ export default function NavBar() {
         <Logotype atTop={atTop} isMenuOpen={mobileShouldOpenBurger} />
         <div
           className={
-            "flex flex-row gap-6 items-center 2xl:-col-end-2 xl:-col-end-2 lg:-col-end-2 md:-col-end-2"
+            "flex flex-row gap-6 items-center 2xl:-col-end-3 xl:-col-end-3 lg:-col-end-3 md:-col-end-3"
           }
         >
           {navigationConfig.map((navItem, index) => {
@@ -78,7 +78,7 @@ export default function NavBar() {
                 href={navItem.link}
                 target={navItem.isExternal ? "_blank" : "_self"}
                 className={clsx(
-                  "-col-end-3 md:-col-end-4 2xl:-col-end-4 2xl:text-[0.75rem] lg:text-[1rem] md:text-[0.8rem] flex flex-row gap-2 size-fit items-center select-none self-center pointer-events-auto",
+                  "flex flex-row gap-2 size-fit items-center select-none self-center pointer-events-auto 2xl:text-[0.75rem] lg:text-[1rem] md:text-[0.8rem]",
                   atTop ? "text-white" : "text-foreground"
                 )}
                 initial="initial"
